@@ -1,0 +1,7 @@
+# Cấu hình DB (chứa mật khẩu)
+src/main/resources/db.properties
+target/
+.vscode/
+*.class
+*.war
+*.log
