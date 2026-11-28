@@ -12,6 +12,7 @@ public class DBConnection {
     static {
         try (InputStream in = DBConnection.class.getClassLoader()
                 .getResourceAsStream("db.properties")) {
+            if (in == null) throw new IllegalStateException("Thiếu src/main/resources/db.properties (copy từ db.properties.example)");
             props.load(in);
             Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (Exception e) {
