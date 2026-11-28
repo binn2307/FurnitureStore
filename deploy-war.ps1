@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 
 $projectRoot = $PSScriptRoot
-$tomcatHome = 'E:\tomcat\apache-tomcat-10.1.61'
+$tomcatHome = 'E:\tomcat\apache-tomcat-10.1.61' //Sửa cho đúng path apache của ae
 $webappsPath = Join-Path $tomcatHome 'webapps'
 $warPath = Join-Path $projectRoot 'target\FurnitureStore.war'
 $destinationPath = Join-Path $webappsPath 'FurnitureStore.war'
